@@ -100,11 +100,58 @@ img {
     text-align: center;
 }
 
-/* .hero-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
+.hero-img {
+    max-width: 350px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero-img-circle {
+    position: relative;
+}
+
+.notification {
+    background-color: #00ff88;
+    padding: 10px 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    right: 50px;
+    z-index: 1;
+    box-shadow: 0 0 20px 0 #00ff8864;
+    /* animation: notification 10s linear .5s reverse; */
+    animation-name: notification;
+    animation-duration: .1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s;
+    animation-iteration-count: 20;
+}
+
+@keyframes notification {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    25% {
+        transform: rotateZ(10deg);
+    }
+
+    50% {
+        transform: rotateZ(0deg);
+    }
+
+    75% {
+        transform: rotateZ(-10deg);
+    }
+
+    100% {
+        transform: rotateZ(0deg);
+    }
+
+
+}
 
 .microphone-img {
     position: absolute;
