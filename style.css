@@ -42,6 +42,12 @@ img {
     padding: 12px 16px;
 }
 
+.btn-primary:hover {
+    background: none;
+    color: green;
+    outline: 1px solid green;
+}
+
 /* header section style  */
 #header {
     background-color: #412567;
@@ -77,4 +83,62 @@ img {
     font-size: 1rem;
     line-height: 120%;
     text-transform: capitalize;
+}
+
+/* hero section style  */
+#hero {
+    background-image: url(./images/hero-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-content {
+    max-width: 525px;
+    margin: 0px auto;
+    padding: 100px 0;
+    text-align: center;
+}
+
+/* .hero-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.microphone-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-info {
+    margin-top: 40px;
+}
+
+.main-heading {
+    font-weight: 900;
+    font-size: 3.75rem;
+    color: white;
+}
+
+.hero-info p {
+    color: rgba(255, 255, 255, 0.8);
+    margin: 10px 0 40px;
+}
+
+.hero-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.spotify-btn,
+.subscribe-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
