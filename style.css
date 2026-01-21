@@ -142,3 +142,50 @@ img {
     align-items: center;
     gap: 10px;
 }
+
+/* about section style  */
+#about {
+    background-color: #1A0B2E;
+    padding: 50px 0;
+}
+
+.about-info {
+    text-align: center;
+}
+
+.about-text {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+
+.about-text h2 {
+    font-weight: 700;
+    font-size: 3rem;
+    color: wheat;
+}
+
+.about-text p {
+    color: white;
+    padding: 15px;
+    line-height: 30px;
+}
+
+.about-card-container {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #230e3d;
+    padding: 60px 0;
+}
+
+.about-card h3 {
+    font-weight: 600;
+    font-size: 3rem;
+    color: #00ff88;
+}
+
+.about-card h4 {
+    font-weight: 400;
+    line-height: 20px;
+    color: white;
+}
