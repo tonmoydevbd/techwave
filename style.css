@@ -379,3 +379,38 @@ iframe {
 .social-icon img {
     padding: 10px;
 }
+
+/* footer section style  */
+#footer {
+    background-image: url(./images/footer-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 35%;
+    margin: 0 auto;
+}
+
+.company-logo {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.logo-with-name {
+    display: flex;
+    gap: 5px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-text p {
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 24px;
+}
