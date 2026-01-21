@@ -263,3 +263,62 @@ img {
 .rich-resources {
     grid-area: rr;
 }
+
+/* episodes section style  */
+#episodes {
+    background-color: #1A0B2E;
+    padding: 120px 0;
+}
+
+.episodes-content h2 {
+    font-weight: bold;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.episodes-card-container {
+    display: flex;
+    gap: 30px;
+}
+
+iframe {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.episodes-card {
+    background-color: #250D44;
+    border-radius: 20px;
+}
+
+.episodes-card-video {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.episodes-card-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.episodes-card-info h3 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.episodes-card-info p {
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 24px;
+}
+
+.duration {
+    font-weight: 500;
+    line-height: 24px;
+    color: #00ff88;
+}
