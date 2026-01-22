@@ -1,6 +1,16 @@
 /* inter font  */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+:root {
+    /* all color  */
+    --primary-color: #1A0B2E;
+    --secondary-color: #230E3D;
+    --secondary-color-lite: #351165;
+    --tertiary-color: #00ff88;
+    --heading-text-color: #ffffff;
+    --body-text-color: rgba(255, 255, 255, 0.6);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -29,7 +39,7 @@ img {
     background-image: linear-gradient(15deg, #F7E93F, #FB09B4, #9100F8);
     border: none;
     border-radius: 30px;
-    color: white;
+    color: var(--body-text-color);
     font-weight: 600;
     font-size: 1rem;
     padding: 12px 16px;
@@ -38,14 +48,33 @@ img {
 
 .btn-primary:hover {
     background: none;
-    color: green;
-    outline: 1px solid green;
+    color: var(--tertiary-color);
+    outline: 1px solid var(--tertiary-color);
+}
+
+.section-heading {
+    font-weight: bold;
+    font-size: 3rem;
+    color: var(--heading-text-color);
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.sub-heading {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--heading-text-color);
+}
+
+.section-text {
+    color: var(--body-text-color);
+    line-height: 1.5rem;
 }
 
 /* header section style  */
 #header {
-    background-color: #1A0B2E;
-    border-bottom: 1px solid #351165;
+    background-color: var(--primary-color);
+    border-bottom: 1px solid var(--secondary-color);
 }
 
 .nav {
@@ -58,7 +87,7 @@ img {
 .brand-name {
     font-weight: 900;
     font-size: 2rem;
-    color: white;
+    color: var(--heading-text-color);
 }
 
 .gradient-text {
@@ -79,7 +108,7 @@ img {
 
 .menu-link {
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--body-text-color);
     font-weight: medium;
     font-size: 1rem;
     line-height: 120%;
@@ -111,7 +140,7 @@ img {
 }
 
 .notification {
-    background-color: #00ff88;
+    background-color: var(--tertiary-color);
     padding: .5em 1em;
     font-weight: 700;
     text-transform: uppercase;
@@ -121,7 +150,7 @@ img {
     top: 0;
     right: 10%;
     z-index: 1;
-    box-shadow: 0 0 20px 0 #00ff8864;
+    box-shadow: 0 0 20px 0 var(--tertiary-color);
     animation-name: notification;
     animation-duration: .1s;
     animation-timing-function: ease-in-out;
@@ -167,11 +196,10 @@ img {
 .main-heading {
     font-weight: 900;
     font-size: 3.75rem;
-    color: white;
+    color: var(--heading-text-color);
 }
 
 .hero-info p {
-    color: rgba(255, 255, 255, 0.8);
     margin: 10px 0 40px;
 }
 
@@ -186,7 +214,7 @@ img {
 
 /* about section style  */
 #about {
-    background-color: #1A0B2E;
+    background-color: var(--primary-color);
     padding: 50px 0;
 }
 
@@ -200,53 +228,36 @@ img {
     padding-bottom: 60px;
 }
 
-.about-text h2 {
-    font-weight: 700;
-    font-size: 3rem;
-    color: white;
-}
-
 .about-text p {
-    color: rgba(255, 255, 255, 0.8);
-    padding: 15px;
-    line-height: 1.5rem;
+    padding: 1rem 0;
 }
 
 .about-card-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
-    border-top: 1px solid #230e3d;
+    border-top: 1px solid var(--secondary-color);
     padding: 60px 0;
 }
 
 .about-card h3 {
-    font-weight: 600;
     font-size: 3rem;
-    color: #00ff88;
+    color: var(--tertiary-color);
 }
 
 .about-card h4 {
     font-weight: 400;
     line-height: 20px;
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--body-text-color);
 }
 
 /* why choose section  */
 #why-choose {
-    background-color: #230E3D;
+    background-color: var(--secondary-color);
 }
 
 .why-choose-content {
     padding: 120px 0;
-}
-
-.why-choose-content h2 {
-    font-weight: bold;
-    font-size: 3rem;
-    color: white;
-    text-transform: capitalize;
-    text-align: center;
 }
 
 .why-choose-grid {
@@ -260,7 +271,7 @@ img {
 }
 
 .why-choose-grid section {
-    background-color: #351165;
+    background-color: var(--secondary-color-lite);
     padding: 40px;
     border-radius: 20px;
     display: flex;
@@ -271,17 +282,6 @@ img {
 
 .grid-icon {
     width: 60px;
-}
-
-.why-choose-grid h3 {
-    font-weight: bold;
-    font-size: 1.5rem;
-    color: white;
-}
-
-.why-choose-grid p {
-    color: rgba(255, 255, 255, 0.6);
-    line-height: 24px;
 }
 
 .audio-quality {
@@ -306,15 +306,11 @@ img {
 
 /* episodes section style  */
 #episodes {
-    background-color: #1A0B2E;
+    background-color: var(--primary-color);
     padding: 120px 0;
 }
 
 .episodes-content h2 {
-    font-weight: bold;
-    font-size: 3rem;
-    color: white;
-    text-align: center;
     margin-bottom: 30px;
 }
 
@@ -324,7 +320,7 @@ img {
 }
 
 .episodes-card {
-    background-color: #250D44;
+    background-color: var(--secondary-color-lite);
     border-radius: 20px;
     max-width: 380px;
 }
@@ -347,17 +343,6 @@ iframe {
     gap: 12px;
 }
 
-.episodes-card-info h3 {
-    font-weight: bold;
-    font-size: 1.5rem;
-    color: white;
-}
-
-.episodes-card-info p {
-    color: rgba(255, 255, 255, 0.6);
-    line-height: 24px;
-}
-
 .duration {
     font-weight: 500;
     line-height: 24px;
@@ -366,16 +351,8 @@ iframe {
 
 /* meet the host section style  */
 #meet-host {
-    background-color: #1A0B2E;
+    background-color: var(--primary-color);
     padding-bottom: 120px;
-}
-
-.meet-host-content h2 {
-    font-weight: bold;
-    font-size: 3rem;
-    color: white;
-    text-align: center;
-    padding-bottom: 30px;
 }
 
 .host-info {
@@ -383,7 +360,7 @@ iframe {
     grid-template-columns: 17% auto;
     column-gap: 25px;
     align-items: center;
-    background-color: #351165;
+    background-color: var(--secondary-color);
     padding: 40px;
     border-radius: 40px;
 }
@@ -395,14 +372,7 @@ iframe {
 }
 
 .host-data h3 {
-    font-weight: bold;
     font-size: 2rem;
-    color: white;
-}
-
-.host-data p {
-    color: rgba(255, 255, 255, 0.6);
-    line-height: 24px;
 }
 
 .social-icon-container {
@@ -413,7 +383,7 @@ iframe {
 .social-icon {
     max-height: 40px;
     max-width: 40px;
-    border: 1px solid #533C72;
+    border: 1px solid var(--secondary-color);
     border-radius: 50%;
 }
 
@@ -448,10 +418,5 @@ iframe {
 .logo-with-name {
     display: flex;
     gap: 5px;
-    color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-text p {
-    color: rgba(255, 255, 255, 0.6);
-    line-height: 24px;
+    color: var(--body-text-color);
 }
