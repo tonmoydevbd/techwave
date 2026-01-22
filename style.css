@@ -121,7 +121,6 @@ img {
     right: 50px;
     z-index: 1;
     box-shadow: 0 0 20px 0 #00ff8864;
-    /* animation: notification 10s linear .5s reverse; */
     animation-name: notification;
     animation-duration: .1s;
     animation-timing-function: ease-in-out;
@@ -244,7 +243,6 @@ img {
 
 .why-choose-content {
     padding: 120px 0;
-    /* text-align: center; */
 }
 
 .why-choose-content h2 {
@@ -276,7 +274,6 @@ img {
 }
 
 .grid-icon {
-    height: 60px;
     width: 60px;
 }
 
