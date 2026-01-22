@@ -229,7 +229,7 @@ img {
 .about-card h4 {
     font-weight: 400;
     line-height: 20px;
-    color: white;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 /* why choose section  */
@@ -323,18 +323,19 @@ img {
     gap: 30px;
 }
 
-iframe {
-    width: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-
 .episodes-card {
     background-color: #250D44;
     border-radius: 20px;
+    max-width: 380px;
 }
 
 .episodes-card-video {
+    height: 215px;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
