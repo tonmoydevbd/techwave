@@ -95,7 +95,7 @@ img {
 }
 
 .hero-content {
-    max-width: 525px;
+    max-width: 545px;
     margin: 0px auto;
     padding: 100px 0;
     text-align: center;
@@ -104,7 +104,6 @@ img {
 .hero-img {
     max-width: 350px;
     margin: 0 auto;
-    text-align: center;
 }
 
 .hero-img-circle {
@@ -113,13 +112,14 @@ img {
 
 .notification {
     background-color: #00ff88;
-    padding: 10px 20px;
+    padding: .5em 1em;
     font-weight: 700;
     text-transform: uppercase;
+    font-size: 1rem;
     border-radius: 20px;
     position: absolute;
     top: 0;
-    right: 50px;
+    right: 10%;
     z-index: 1;
     box-shadow: 0 0 20px 0 #00ff8864;
     animation-name: notification;
@@ -175,13 +175,7 @@ img {
     margin: 10px 0 40px;
 }
 
-.hero-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
+.hero-btn,
 .spotify-btn,
 .subscribe-btn {
     display: flex;
@@ -209,18 +203,19 @@ img {
 .about-text h2 {
     font-weight: 700;
     font-size: 3rem;
-    color: wheat;
+    color: white;
 }
 
 .about-text p {
-    color: white;
+    color: rgba(255, 255, 255, 0.8);
     padding: 15px;
-    line-height: 30px;
+    line-height: 1.5rem;
 }
 
 .about-card-container {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
     border-top: 1px solid #230e3d;
     padding: 60px 0;
 }
