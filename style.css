@@ -380,7 +380,7 @@ iframe {
 
 .host-info {
     display: grid;
-    grid-template-columns: 200px auto;
+    grid-template-columns: 17% auto;
     column-gap: 25px;
     align-items: center;
     background-color: #351165;
@@ -411,8 +411,8 @@ iframe {
 }
 
 .social-icon {
-    height: 40px;
-    width: 40px;
+    max-height: 40px;
+    max-width: 40px;
     border: 1px solid #533C72;
     border-radius: 50%;
 }
