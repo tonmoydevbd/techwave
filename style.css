@@ -81,7 +81,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem;
+    padding: 24px 0;
 }
 
 .brand-name {
@@ -115,18 +115,22 @@ img {
     text-transform: capitalize;
 }
 
+.hamburger-icon {
+    display: none;
+}
+
 /* hero section style  */
 #hero {
     background-image: url(./images/hero-bg.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    padding: 100px 0;
 }
 
 .hero-content {
     max-width: 545px;
     margin: 0px auto;
-    padding: 100px 0;
     text-align: center;
 }
 
@@ -215,7 +219,7 @@ img {
 /* about section style  */
 #about {
     background-color: var(--primary-color);
-    padding: 50px 0;
+    padding: 60px 0;
 }
 
 .about-info {
@@ -225,7 +229,7 @@ img {
 .about-text {
     max-width: 800px;
     margin: 0 auto;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
 }
 
 .about-text p {
@@ -254,9 +258,6 @@ img {
 /* why choose section  */
 #why-choose {
     background-color: var(--secondary-color);
-}
-
-.why-choose-content {
     padding: 120px 0;
 }
 
@@ -322,7 +323,7 @@ img {
 .episodes-card {
     background-color: var(--secondary-color-lite);
     border-radius: 20px;
-    max-width: 380px;
+    /* max-width: 380px; */
 }
 
 .episodes-card-video {
@@ -356,9 +357,12 @@ iframe {
 }
 
 .host-info {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 17% auto;
     column-gap: 25px;
+    align-items: center; */
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     background-color: var(--secondary-color);
     margin-top: 40px;
@@ -366,7 +370,12 @@ iframe {
     border-radius: 40px;
 }
 
+.host-img {
+    width: 17%;
+}
+
 .host-data {
+    width: 80%;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -420,4 +429,135 @@ iframe {
     display: flex;
     gap: 5px;
     color: var(--body-text-color);
+}
+
+/* mobile responsive */
+@media screen and (max-width: 576px) {
+
+    .container {
+        padding: 0 5%;
+    }
+
+    .section-heading {
+        font-size: 2rem;
+    }
+
+    .nav {
+        padding: 18px 5%;
+    }
+
+    .nav-menu,
+    .nav-btn {
+        display: none;
+    }
+
+    .hamburger-icon {
+        display: block;
+        color: var(--body-text-color);
+        font-size: 1.5rem;
+    }
+
+    /* hero section  */
+    #hero {
+        padding: 40px 5%;
+    }
+
+    .hero-img {
+        max-width: 200px;
+    }
+
+    .microphone-img {
+        max-width: 50px;
+    }
+
+    .main-heading {
+        font-size: 2.5rem;
+
+    }
+
+    .hero-info {
+        margin-top: 24px;
+    }
+
+    .hero-info p {
+        margin: 10px 0 20px;
+    }
+
+    /* about section  */
+    #about {
+        padding: 40px 0;
+    }
+
+    .about-card-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 40px 0 0;
+        gap: 40px;
+    }
+
+    .about-card h3 {
+        font-size: 2.5rem;
+    }
+
+    /* why choose section  */
+    #why-choose {
+        padding: 40px 0;
+    }
+
+    .why-choose-grid {
+        display: grid;
+        grid-template-areas:
+            'aq'
+            'mf'
+            'gc'
+            'ei'
+            'rr';
+        gap: 16px;
+        padding-top: 16px;
+    }
+
+    /* episodes section  */
+    #episodes {
+        padding: 40px 0;
+    }
+
+    .episodes-card-container {
+        flex-direction: column;
+        align-items: center;
+        max-width: calc(576px - 10%);
+    }
+
+    #meet-host {
+        padding-bottom: 40px;
+    }
+
+    .host-info {
+        flex-direction: column;
+    }
+
+    .host-img {
+        width: 150px;
+    }
+
+    .host-data {
+        width: 100%;
+        text-align: center;
+    }
+
+    .social-icon-container {
+        justify-content: center;
+    }
+
+    /* footer section  */
+    #footer {
+        padding: 40px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .company-logo {
+        gap: 16px;
+        flex-wrap: wrap;
+        max-width: 255px;
+    }
 }
