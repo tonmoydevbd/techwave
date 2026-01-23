@@ -395,8 +395,13 @@ iframe {
 .social-icon {
     max-height: 40px;
     max-width: 40px;
-    border: 1px solid var(--secondary-color);
+    border: 1px solid var(--secondary-color-lite);
     border-radius: 50%;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+    transition: transform 1s;
 }
 
 .social-icon img {
